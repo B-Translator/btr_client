@@ -38,7 +38,7 @@ projects[libraries] = 2.3
 projects[entity] = 1.8
 projects[xautoload] = 5.7
 projects[token] = 1.7
-projects[rules] = 2.10
+projects[rules] = 2.x-dev
 projects[pathauto] = 1.3
 projects[subpathauto] = 1.3
 
