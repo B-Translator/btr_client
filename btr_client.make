@@ -33,9 +33,9 @@ projects[devel] = 1.5
 projects[diff] = 3.3
 
 ;;; Extensions
-projects[ctools] = 1.12
+projects[ctools] = 1.14
 projects[libraries] = 2.3
-projects[entity] = 1.8
+projects[entity] = 1.9
 projects[xautoload] = 5.7
 projects[token] = 1.7
 projects[rules] = 2.x-dev
@@ -118,6 +118,6 @@ projects[btrclient][download][branch] = 7.x-2.x
 ; Additional
 ;--------------------
 
-projects[menu_target] = 1.6
+projects[menu_target] = 1.7
 projects[menu_import] = 1.7
 projects[advuser] = 3.x-dev
