@@ -26,8 +26,7 @@ drush @bcl features-list --pipe --status=enabled \
       > $(pwd)/bcl_features.txt
 
 # backup drupal variables
-local dir
-dir=/var/www/bcl/profiles/bcl_server/modules/features
+dir=/var/www/bcl/profiles/btr_client/modules/features
 $dir/save-private-vars.sh @bcl
 mv restore-private-vars.php restore-private-vars-bcl.php
 
