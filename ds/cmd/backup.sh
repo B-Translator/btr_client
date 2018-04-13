@@ -16,7 +16,7 @@ cmd_backup() {
             _make_full_backup
             ;;
         data)
-            ds inject backup.sh
+            _make_data_backup
             ;;
         *)
             _make_app_backup $arg
@@ -80,6 +80,31 @@ _make_full_backup() {
            --result-file=/host/$backup/bcl_dev.sql
         cp -a var-www/bcl_dev $backup/
     fi
+
+    # make the backup archive
+    tar --create --gzip --preserve-permissions --file=$backup.tgz $backup/
+    rm -rf $backup/
+
+    # enable the site
+    ds exec drush --yes @local_bcl vset maintenance_mode 0
+}
+
+_make_data_backup() {
+    # disable the site for maintenance
+    ds exec drush --yes @local_bcl vset maintenance_mode 1
+
+    # clear the cache
+    ds exec drush --yes @local_bcl cache-clear all
+
+    # create the backup dir
+    local backup="backup-data-$(date +%Y%m%d)"
+    rm -rf $backup
+    rm -f $backup.tgz
+    mkdir $backup
+
+    # copy the data to the backup dir
+    ds inject backup.sh $backup
+    [[ -f backup.sh ]] && source backup.sh
 
     # make the backup archive
     tar --create --gzip --preserve-permissions --file=$backup.tgz $backup/

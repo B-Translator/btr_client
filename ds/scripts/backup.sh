@@ -1,20 +1,8 @@
 #!/bin/bash -x
 
-#source /host/settings.sh
-
-# create the backup dir
-backup="backup-data-$(date +%Y%m%d)"
-cd /host/
-rm -rf $backup
-rm -f $backup.tgz
-mkdir $backup
-cd $backup/
-
-# disable the site for maintenance
-drush --yes @local_bcl vset maintenance_mode 1
-
-# clear the cache
-drush --yes @local_bcl cache-clear all
+# go to the backup dir
+backup=$1
+cd /host/$backup
 
 # backup bcl users
 mysqldump=$(drush @bcl sql-connect | sed -e 's/^mysql/mysqldump/' -e 's/--database=/--databases /')
@@ -29,11 +17,3 @@ drush @bcl features-list --pipe --status=enabled \
 dir=/var/www/bcl/profiles/btr_client/modules/features
 $dir/save-private-vars.sh @bcl
 mv restore-private-vars.php restore-private-vars-bcl.php
-
-# make the backup archive
-cd /host/
-tar --create --gzip --preserve-permissions --file=$backup.tgz $backup/
-rm -rf $backup/
-
-# enable the site
-drush --yes @local_bcl vset maintenance_mode 0
