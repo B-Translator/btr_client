@@ -15,3 +15,6 @@ done < bcl_features.txt
 
 # restore private variables
 drush @bcl php-script $(pwd)/restore-private-vars-bcl.php
+
+# restore twitter configuration
+[[ -f trc ]] && cp trc /home/twitter/.trc
