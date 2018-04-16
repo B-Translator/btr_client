@@ -34,6 +34,9 @@ $drush features-revert bcl_misc
 $drush pm-enable bcl_layout
 $drush features-revert bcl_layout
 
+$drush pm-enable bootstrap
+$drush pm-enable btr_client
+
 $drush pm-enable bcl_content
 
 $drush pm-enable bcl_permissions
