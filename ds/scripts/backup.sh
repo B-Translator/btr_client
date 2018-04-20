@@ -20,3 +20,6 @@ mv restore-private-vars.php restore-private-vars-bcl.php
 
 # backup twitter configuration
 [[ -f /home/twitter/.trc ]] && cp /home/twitter/.trc trc
+
+# custom backup script
+[[ -f /host/backup.sh ]] && source /host/backup.sh

@@ -18,3 +18,6 @@ drush @bcl php-script $(pwd)/restore-private-vars-bcl.php
 
 # restore twitter configuration
 [[ -f trc ]] && cp trc /home/twitter/.trc
+
+# custom restore script
+[[ -f /host/restore.sh ]] && source /host/restore.sh
