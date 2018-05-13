@@ -16,7 +16,7 @@ cmd_setup-oauth2-login() {
     local client_url=$(ds exec drush @bcl php-eval 'print $GLOBALS["base_url"]')
     local server_url=$(ds $btr_server exec drush @btr php-eval 'print $GLOBALS["base_url"]')
     local redirect_uri="$client_url/oauth2/authorized"
-    local client_key='localclient'
+    local client_key="$CONTAINER"
     local client_secret=$(mcookie)
 
     # register an oauth2 client on btr_server
