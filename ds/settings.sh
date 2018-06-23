@@ -2,14 +2,14 @@ APP=btr_client/ds
 
 ### Docker settings.
 IMAGE=btr_client
-CONTAINER=bcl-example-org
+CONTAINER=bcl.example.org
 DOMAIN="bcl.example.org"
 
 ### Uncomment if this installation is for development.
 DEV=true
 
 ### Other domains.
-[[ -n $DEV ]] && DOMAINS="dev.bcl.example.org tst.bcl.example.org"
+[[ -n $DEV ]] && DOMAINS="dev.$DOMAIN tst.$DOMAIN"
 
 ### DB settings
 DBHOST=mariadb
