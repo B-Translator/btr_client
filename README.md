@@ -30,11 +30,11 @@ For more detailed information see: http://info.btranslator.org
     git clone https://github.com/B-Translator/btr_client /opt/docker-scripts/btr_client
     ```
 
-  - Create a directory for the container: `ds init btr_client/ds @bcl-example-org`
+  - Create a directory for the container: `ds init btr_client/ds @bcl.example.org`
 
   - Fix the settings:
     ```
-    cd /var/ds/bcl-example-org/
+    cd /var/ds/bcl.example.org/
     vim settings.sh
     ```
 
