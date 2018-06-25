@@ -14,9 +14,9 @@ DEV=true
 ### DB settings
 DBHOST=mariadb
 DBPORT=3306
-DBNAME=bcl
-DBUSER=bcl
-DBPASS=bcl
+DBNAME=bcl_example_org
+DBUSER=bcl_example_org
+DBPASS=bcl_example_org
 
 ### Gmail account for notifications. This will be used by ssmtp.
 ### You need to create an application specific password for your account:
