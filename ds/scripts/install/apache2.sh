@@ -37,6 +37,7 @@ Alias /downloads /var/www/downloads
     Options Indexes FollowSymLinks
 </Directory>
 EOF
+a2enconf downloads
 
 ### enable ssl etc.
 a2enmod ssl
