@@ -492,7 +492,7 @@ function bcl_misc_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'drupal_http_request_fails';
-  $strongarm->value = TRUE;
+  $strongarm->value = FALSE;
   $export['drupal_http_request_fails'] = $strongarm;
 
   $strongarm = new stdClass();
