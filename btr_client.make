@@ -11,17 +11,17 @@ defaults[projects][subdir] = contrib
 ; Bootstrap Theme
 ;--------------------
 
-projects[bootstrap] = 3.20
+projects[bootstrap] = 3.21
 projects[jquery_update] = 3.0-alpha5
 projects[less] = 4.0
 
 libraries[bootstrap][directory_name] = bootstrap
 libraries[bootstrap][download][type] = get
-libraries[bootstrap][download][url] = https://github.com/twbs/bootstrap/archive/v3.3.6.zip
+libraries[bootstrap][download][url] = https://github.com/twbs/bootstrap/archive/v3.3.7.zip
 
 libraries[lessphp][directory_name] = lessphp
 libraries[lessphp][download][type] = get
-libraries[lessphp][download][url] = https://github.com/oyejorge/less.php/archive/v1.7.0.5.tar.gz
+libraries[lessphp][download][url] = https://github.com/oyejorge/less.php/archive/v1.7.0.10.tar.gz
 
 ;--------------------
 ; Contrib
@@ -63,7 +63,7 @@ projects[features] = 2.10
 projects[strongarm] = 2.0
 projects[features_extra] = 1.0
 projects[node_export] = 3.1
-projects[uuid] = 1.1
+projects[uuid] = 1.2
 
 ;projects[defaultconfig][version] = 1.x-dev
 ;projects[defaultconfig][patch][1900574] = https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
@@ -87,7 +87,7 @@ projects[mass_contact] = 1.1
 ; Sending Emails
 ;--------------------
 
-projects[mailsystem] = 2.34
+projects[mailsystem] = 2.35
 projects[mimemail] = 1.0
 projects[reroute_email] = 1.3
 
@@ -95,7 +95,7 @@ projects[phpmailer] = 3.1
 
 libraries[phpmailer][directory_name] = phpmailer
 libraries[phpmailer][download][type] = get
-libraries[phpmailer][download][url] = https://github.com/PHPMailer/PHPMailer/archive/v5.2.24.zip
+libraries[phpmailer][download][url] = https://github.com/PHPMailer/PHPMailer/archive/v5.2.26.zip
 
 ;--------------------
 ; Libraries
