@@ -68,7 +68,8 @@ For more detailed information see: http://info.btranslator.org
     ds setup-oauth2-login @<btr-server>
 
     ds inject set-oauth2-login.sh [<@alias> <server-url> <client-key> <client-secret>]
-    ds inject set-emailsmtp.sh <gmail-user> <gmail-passwd>
+    ds inject set-emailsmtp.sh 'smtp_server' <smtp-server> <smtp-domain>
+    ds inject set-emailsmtp.sh 'gmail_account' <gmail-user> <gmail-passwd>
     ds inject set-adminpass.sh <new-drupal-admin-passwd>
     ds inject set-domain.sh <new.domain>
     ds inject set-translation-lng.sh
