@@ -8,7 +8,6 @@ mass_contact_default_sender_email
 mass_contact_default_sender_name
 recaptcha_site_key
 recaptcha_secret_key
-googleanalytics_account
 cron_key
 date_default_timezone
 date_first_day

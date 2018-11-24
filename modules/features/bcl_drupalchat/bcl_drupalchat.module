@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the bcl_drupalchat feature.
- */
-
-include_once 'bcl_drupalchat.features.inc';

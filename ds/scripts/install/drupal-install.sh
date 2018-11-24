@@ -50,8 +50,6 @@ $drush features-revert bcl_permissions
 #$drush pm-enable bcl_invite
 #$drush pm-enable bcl_simplenews
 #$drush pm-enable bcl_mass_contact
-#$drush pm-enable bcl_googleanalytics
-#$drush pm-enable bcl_drupalchat
 
 ### update to the latest version of core and modules
 #$drush pm-refresh

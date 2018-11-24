@@ -14,7 +14,7 @@
      installation of the application, without having to repeat them
      manually.
   3. Make the application structured (as opposed to monolithic).  For
-     example drupalchat is offered as a feature and can be installed
+     example simplenews is offered as a feature and can be installed
      very easily by installing the feature.  But sites that do not
      want to use it just don't install that feature.
 
@@ -89,11 +89,10 @@
   ~/var/www/bcl_dev/profiles/btr_client/modules/features/bcl_layout/~
 
   Other features that I have created are: /bcl_disqus/, /bcl_invite/,
-  /bcl_captcha/, /bcl_drupalchat/, /bcl_simplenews/,
-  /bcl_mass_contact/, /bcl_googleanalytics/, etc.  In order to
-  recreate them easily, the script =create-features.sh= can be
-  used. It will create a feature for each list of components that is
-  on the directory ~components/~.
+  /bcl_captcha/, /bcl_simplenews/, /bcl_mass_contact/, etc.  In order to
+  recreate them easily, the script =create-features.sh= can be used. It
+  will create a feature for each list of components that is on the
+  directory ~components/~.
 
   The file ~create-features.sh~ has a content like this:
   #+BEGIN_EXAMPLE
@@ -222,17 +221,17 @@
   module.
 
   Some of these modules are just wrappers to external API services,
-  like disqus, recaptcha, googleanalytics, etc. Usually they need some
-  API keys or any other private attributes that are different from
-  site to site. We cannot save these private attributes on the
-  feature, because they are specific for each different site. But we
-  would like to offer the administrator/maintainer of the
-  (B-Translator) application an easy way to manage them, without
-  having to search up and down among a huge number of configuration
-  options available to the Drupal admin. In order to do this, I have
-  customized the automatically generated features, taking advantage of
-  the fact that they are just Drupal modules, and anything that works
-  for Drupal modules works for them too.
+  like disqus, recaptcha, etc. Usually they need some API keys or any
+  other private attributes that are different from site to site. We
+  cannot save these private attributes on the feature, because they
+  are specific for each different site. But we would like to offer the
+  administrator/maintainer of the (B-Translator) application an easy
+  way to manage them, without having to search up and down among a
+  huge number of configuration options available to the Drupal
+  admin. In order to do this, I have customized the automatically
+  generated features, taking advantage of the fact that they are just
+  Drupal modules, and anything that works for Drupal modules works for
+  them too.
 
   For example, for the feature /bcl_googleanalytics/, I have
   added this line on ~bcl_googleanalytics.module~:

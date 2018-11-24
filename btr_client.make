@@ -46,7 +46,6 @@ projects[subpathauto] = 1.3
 ;;; User interface
 projects[context] = 3.8
 projects[views] = 3.20
-projects[homebox] = 2.0-rc1
 projects[boxes] = 1.2
 projects[edit_profile] = 1.0-beta2
 projects[wysiwyg] = 2.5
@@ -54,7 +53,6 @@ projects[wysiwyg] = 2.5
 ;;; Security
 projects[captcha] = 1.5
 projects[recaptcha] = 2.2
-projects[honeypot] = 1.22
 projects[user_restrictions] = 1.1
 projects[user_restrictions][patch][2856139] = https://www.drupal.org/files/issues/variable_passed_by_reference-2856139-1.patch
 
@@ -78,8 +76,6 @@ projects[l10n_update] = 2.2
 projects[boost] = 1.2
 
 ;;; Services and Social
-projects[google_analytics] = 2.3
-projects[drupalchat] = 1.7
 projects[simplenews] = 1.1
 projects[mass_contact] = 1.1
 
