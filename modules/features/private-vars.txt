@@ -44,3 +44,4 @@ hybridauth_provider_DrupalOAuth2_keys_secret
 hybridauth_provider_DrupalOAuth2_oauth2_server
 hybridauth_provider_DrupalOAuth2_proxy
 hybridauth_provider_DrupalOAuth2_skipssl
+user_register
