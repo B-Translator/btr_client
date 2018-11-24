@@ -56,6 +56,13 @@ For more detailed information see: http://info.btranslator.org
     https://bcl.example.org
 
 
+## Backup and restore
+
+    ds backup data
+    ds backup full
+    ds restore <backup-file.tgz>
+
+
 ## Other commands
 
     ds help
@@ -77,6 +84,3 @@ For more detailed information see: http://info.btranslator.org
     ds inject dev/clone.sh test
     ds inject dev/clone-del.sh test
     ds inject dev/clone.sh 01
-
-    ds backup [proj1]
-    ds restore <backup-file.tgz> [proj1]

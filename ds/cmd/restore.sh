@@ -86,6 +86,9 @@ _make_full_restore() {
         cp -a $backup/bcl_dev var-www/
     fi
 
+    # restore the data from the backup dir
+    ds inject restore.sh $backup
+
     # clean up
     rm -rf $backup
 

@@ -1,8 +1,8 @@
 cmd_backup_help() {
     cat <<_EOF
-    backup [full | data | <app>]
-        'full' make a full backup of everything
+    backup [data | full | <app>]
         'data' make a backup of the important data only
+        'full' make a full backup of everything
         <app> can be 'bcl', 'bcl_dev', etc.
 
 _EOF
@@ -10,7 +10,7 @@ _EOF
 
 cmd_backup() {
     set -x
-    local arg=${1:-full}
+    local arg=${1:-data}
     case $arg in
         full)
             _make_full_backup
@@ -83,6 +83,9 @@ _make_full_backup() {
            --result-file=/host/$backup/bcl_dev.sql
         cp -a var-www/bcl_dev $backup/
     fi
+
+    # copy the data to the backup dir
+    ds inject backup.sh $backup
 
     # make the backup archive
     tar --create --gzip --preserve-permissions --file=$backup.tgz $backup/

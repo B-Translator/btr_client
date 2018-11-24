@@ -8,6 +8,7 @@ _EOF
 }
 
 cmd_setup-oauth2-login() {
+    set -x
     # get the container of the server
     local btr_server=$1
     [[ ${btr_server:0:1} == '@' ]] || fail "Usage:\n$(cmd_setup-oauth2-login_help)"
