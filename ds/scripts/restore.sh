@@ -36,7 +36,10 @@ done < bcl_features.txt
 drush @bcl php-script $(pwd)/restore-private-vars-bcl.php
 
 # restore twitter configuration
-[[ -f trc ]] && cp trc /home/twitter/.trc
+if [[ -f trc ]]; then
+    cp trc /home/twitter/.trc
+    chown twitter: /home/twitter/.trc
+fi
 
 # restore any custom scripts
 restore_custom_scripts
