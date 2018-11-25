@@ -20,7 +20,6 @@ cmd_remake() {
     ds remove
     ds make
     ds restart
-    ds wsproxy ssl-cert
 
     # restore
     local backup_file="backup-$full-$(date +%Y%m%d).tgz"
