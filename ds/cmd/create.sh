@@ -24,4 +24,8 @@ cmd_create() {
 
     # create the database
     ds mariadb create
+
+    # copy local commands
+    mkdir -p cmd/
+    [[ -f cmd/remake.sh ]] || cp $APP_DIR/misc/remake.sh cmd/
 }
