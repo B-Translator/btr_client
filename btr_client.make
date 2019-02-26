@@ -11,7 +11,7 @@ defaults[projects][subdir] = contrib
 ; Bootstrap Theme
 ;--------------------
 
-projects[bootstrap] = 3.22
+projects[bootstrap] = 3.23
 projects[jquery_update] = 3.0-alpha5
 projects[less] = 4.0
 
@@ -28,18 +28,17 @@ libraries[lessphp][download][url] = https://github.com/oyejorge/less.php/archive
 ;--------------------
 
 ;;; Development
-projects[devel] = 1.6
+projects[devel] = 1.7
 ;projects[coder] = 1.2
 projects[diff] = 3.4
 
 ;;; Extensions
-projects[ctools] = 1.14
+projects[ctools] = 1.15
 projects[libraries] = 2.5
 projects[entity] = 1.9
 projects[xautoload] = 5.7
 projects[token] = 1.7
-projects[rules] = 2.10
-projects[rules][patch][2923477] = https://www.drupal.org/files/issues/php7_2_compatibility-2923477-5.patch
+projects[rules] = 2.12
 projects[pathauto] = 1.3
 projects[subpathauto] = 1.3
 
@@ -52,7 +51,7 @@ projects[wysiwyg] = 2.5
 
 ;;; Security
 projects[captcha] = 1.5
-projects[recaptcha] = 2.2
+projects[recaptcha] = 2.3
 projects[user_restrictions] = 1.1
 projects[user_restrictions][patch][2856139] = https://www.drupal.org/files/issues/variable_passed_by_reference-2856139-1.patch
 
@@ -85,7 +84,7 @@ projects[mass_contact] = 1.1
 
 projects[mailsystem] = 2.35
 projects[mimemail] = 1.1
-projects[reroute_email] = 1.3
+projects[reroute_email] = 1.4
 
 projects[phpmailer] = 3.1
 
